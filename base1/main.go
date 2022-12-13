@@ -1,3 +1,6 @@
+/***
+hello word
+ */
 package main
 
 import (

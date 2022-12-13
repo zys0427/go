@@ -1,3 +1,6 @@
+/**
+go  切片 数据提取
+ */
 package main
 
 import "fmt"

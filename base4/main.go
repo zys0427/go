@@ -10,6 +10,7 @@ func main() {
 
 	fileCounts := make(map[string]map[string]int)
 	files := os.Args[1:]
+	fmt.Println(files)
 	if len(files) == 0 {
 		countLines(os.Stdin, fileCounts)
 	} else {
@@ -45,8 +46,5 @@ func countLines(f *os.File, fileCounts map[string]map[string]int) {
 		} else {
 			fileCounts[f.Name()][input.Text()] = 1
 		}
-
 	}
-
-	// NOTE: ignoring potential errors from input.Err()
 }
